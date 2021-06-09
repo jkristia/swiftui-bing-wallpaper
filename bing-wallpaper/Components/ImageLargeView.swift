@@ -31,7 +31,7 @@ struct ImageLargeView: View {
                         .aspectRatio(contentMode: .fit)
                         .cornerRadius(radius)
                         .overlay(RoundedRectangle(cornerRadius: radius)
-                                    .stroke(Color(#colorLiteral(red: 0.5723067522, green: 0.5723067522, blue: 0.5723067522, alpha: 1)), lineWidth: 4))
+                                    .stroke(Color(#colorLiteral(red: 0.7437103391, green: 0.7437103391, blue: 0.7437103391, alpha: 0.6982967688)), lineWidth: 4))
                         .padding(5)
                         .shadow(radius: 5, x: 5, y: 5)
                     Spacer()
