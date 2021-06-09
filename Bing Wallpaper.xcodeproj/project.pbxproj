@@ -15,11 +15,11 @@
 		9F2F39AB267082AA00969C92 /* ImageMetaDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F39A7267082AA00969C92 /* ImageMetaDTO.swift */; };
 		9F2F39AC267082AA00969C92 /* ImageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F39A8267082AA00969C92 /* ImageData.swift */; };
 		9F2F39AD267082AA00969C92 /* RemoteAccess.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F39A9267082AA00969C92 /* RemoteAccess.swift */; };
-		9F2F39AF2670E94900969C92 /* NSImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F39AE2670E94900969C92 /* NSImageExtension.swift */; };
 		9F2F39B62670EAF200969C92 /* ImageThumbnailListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F39B22670EAF200969C92 /* ImageThumbnailListView.swift */; };
 		9F2F39B72670EAF200969C92 /* ImageThumbnailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F39B32670EAF200969C92 /* ImageThumbnailView.swift */; };
 		9F2F39B82670EAF200969C92 /* LinkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F39B42670EAF200969C92 /* LinkView.swift */; };
 		9F2F39B92670EAF200969C92 /* ImageLargeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F2F39B52670EAF200969C92 /* ImageLargeView.swift */; };
+		9F8C810E26718757007EF126 /* NSImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F8C810D26718757007EF126 /* NSImageExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,11 +34,11 @@
 		9F2F39A7267082AA00969C92 /* ImageMetaDTO.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageMetaDTO.swift; sourceTree = "<group>"; };
 		9F2F39A8267082AA00969C92 /* ImageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageData.swift; sourceTree = "<group>"; };
 		9F2F39A9267082AA00969C92 /* RemoteAccess.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteAccess.swift; sourceTree = "<group>"; };
-		9F2F39AE2670E94900969C92 /* NSImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSImageExtension.swift; sourceTree = "<group>"; };
 		9F2F39B22670EAF200969C92 /* ImageThumbnailListView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageThumbnailListView.swift; sourceTree = "<group>"; };
 		9F2F39B32670EAF200969C92 /* ImageThumbnailView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageThumbnailView.swift; sourceTree = "<group>"; };
 		9F2F39B42670EAF200969C92 /* LinkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinkView.swift; sourceTree = "<group>"; };
 		9F2F39B52670EAF200969C92 /* ImageLargeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageLargeView.swift; sourceTree = "<group>"; };
+		9F8C810D26718757007EF126 /* NSImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSImageExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,7 @@
 		9F2F39B02670E96A00969C92 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				9F2F39AE2670E94900969C92 /* NSImageExtension.swift */,
+				9F8C810D26718757007EF126 /* NSImageExtension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -193,11 +193,11 @@
 			files = (
 				9F2F39982670790D00969C92 /* MainView.swift in Sources */,
 				9F2F39B92670EAF200969C92 /* ImageLargeView.swift in Sources */,
+				9F8C810E26718757007EF126 /* NSImageExtension.swift in Sources */,
 				9F2F39962670790D00969C92 /* BingWallPaperApp.swift in Sources */,
 				9F2F39B72670EAF200969C92 /* ImageThumbnailView.swift in Sources */,
 				9F2F39AA267082AA00969C92 /* Datastore.swift in Sources */,
 				9F2F39B82670EAF200969C92 /* LinkView.swift in Sources */,
-				9F2F39AF2670E94900969C92 /* NSImageExtension.swift in Sources */,
 				9F2F39AC267082AA00969C92 /* ImageData.swift in Sources */,
 				9F2F39B62670EAF200969C92 /* ImageThumbnailListView.swift in Sources */,
 				9F2F39AB267082AA00969C92 /* ImageMetaDTO.swift in Sources */,
