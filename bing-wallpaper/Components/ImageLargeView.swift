@@ -14,6 +14,7 @@ struct ImageLargeView: View {
         if hasView == false {
             noView()
         } else {
+            let radius = CGFloat(8)
             let item = selectedItem!
             let imageInfo = item
             let hasLink = imageInfo.imageUrl != nil
@@ -28,7 +29,11 @@ struct ImageLargeView: View {
                     Image(nsImage: imageInfo.image != nil ? imageInfo.image! : NSImage())
                         .resizable()
                         .aspectRatio(contentMode: .fit)
-                        .cornerRadius(5)
+                        .cornerRadius(radius)
+                        .overlay(RoundedRectangle(cornerRadius: radius)
+                                    .stroke(Color(#colorLiteral(red: 0.5723067522, green: 0.5723067522, blue: 0.5723067522, alpha: 1)), lineWidth: 4))
+                        .padding(5)
+                        .shadow(radius: 5, x: 5, y: 5)
                     Spacer()
                     HStack {
                         Spacer()
