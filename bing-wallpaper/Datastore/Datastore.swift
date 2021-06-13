@@ -4,7 +4,7 @@ import Cocoa
 class Datastore : ObservableObject {
     private var _remote = RemoteAccess()
     private let _refreshTime: Double = 60 * 60; // check once an hour
-//    private let _refreshTime: Double = 60; // check once a minute
+    // private let _refreshTime: Double = 60; // check once a minute
 
     @Published private(set) var items: [ImageInfo] = []
     @Published var selectedItem: ImageInfo? {
@@ -16,7 +16,10 @@ class Datastore : ObservableObject {
     public init() {
         Timer.scheduledTimer(timeInterval: _refreshTime, target: self, selector: #selector(checkForNewImage), userInfo: nil, repeats: true)
     }
-    public func load() {
+    public func check() {
+        self.checkForNewImage();
+    }
+    private func loadThumbnails() {
         _remote.getImageInfo { metaItems in
             self.items = []
             for metaItem in metaItems {
@@ -56,6 +59,10 @@ class Datastore : ObservableObject {
         }
     }
     @objc func checkForNewImage() {
+        if self.items.count == 0 {
+            self.loadThumbnails()
+            return;
+        }
         _remote.getImageInfo { metaItems in
             let last1 = metaItems[0]
             let last2 = self.items[0].meta!
@@ -65,7 +72,7 @@ class Datastore : ObservableObject {
                 print("Check Img = \(last2.url)")
                 // changed, reload
                 self.selectedItem = nil
-                self.load()
+                self.loadThumbnails()
             }
         }
     }
