@@ -3,9 +3,15 @@ import SwiftUI
 class AppDelegate: NSObject, NSApplicationDelegate {
     // https://stackoverflow.com/questions/65460457/how-do-i-disable-the-show-tab-bar-menu-option-in-swiftui
     func applicationDidFinishLaunching(_ notification: Notification) {
-//        print("Info from `applicationDidFinishLaunching(_:): Finished launching…")
-        //        let _ = NSApplication.shared.windows.map { $0.tabbingMode = .disallowed }
         NSWindow.allowsAutomaticWindowTabbing = false
+        // Remove default 'Edit' menu from main menu
+        if let mainMenu = NSApp .mainMenu {
+            DispatchQueue.main.async {
+                if let edit = mainMenu.items.first(where: { $0.title == "Edit"}) {
+                    mainMenu.removeItem(edit);
+                }
+            }
+        }
     }
 }
 
